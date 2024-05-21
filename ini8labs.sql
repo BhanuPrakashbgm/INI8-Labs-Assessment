@@ -18,7 +18,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 
 -- -----------------------------------------------------
 
--- Schema ini8labs
+-- Schema ini8
 
 -- -----------------------------------------------------
 
@@ -26,13 +26,13 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 
 -- -----------------------------------------------------
 
--- Schema ini8labs
+-- Schema ini8
 
 -- -----------------------------------------------------
 
-CREATE SCHEMA IF NOT EXISTS `ini8labs` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+CREATE SCHEMA IF NOT EXISTS `ini8` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
 
-USE `ini8labs` ;
+USE `ini8` ;
 
 
 
@@ -42,7 +42,7 @@ USE `ini8labs` ;
 
 -- -----------------------------------------------------
 
-CREATE TABLE IF NOT EXISTS `ini8labs`.`users` (
+CREATE TABLE IF NOT EXISTS `ini8`.`users` (
 
   `id` INT NOT NULL AUTO_INCREMENT,
 
@@ -68,11 +68,11 @@ COLLATE = utf8mb4_0900_ai_ci;
 
 
 
-CREATE UNIQUE INDEX `email_UNIQUE` ON `ini8labs`.`users` (`email` ASC) VISIBLE;
+CREATE UNIQUE INDEX `email_UNIQUE` ON `ini8`.`users` (`email` ASC) VISIBLE;
 
 
 
-CREATE UNIQUE INDEX `phone_UNIQUE` ON `ini8labs`.`users` (`phone` ASC) VISIBLE;
+CREATE UNIQUE INDEX `phone_UNIQUE` ON `ini8`.`users` (`phone` ASC) VISIBLE;
 
 
 
